@@ -34,7 +34,7 @@ jobs:
       - name: build javascript
         run: npm run build
       - name: Copy files to dist
-        run: cp -R module.json dist/
+        run: cp -R README.md LICENSE module.json dist/
       # Create a zip file with all files required by the module to add to the release
       - run: zip -r ../module.zip *
         working-directory: ./dist
