@@ -15,6 +15,18 @@
     "maximum": "11"
   },
   "esmodules": ["scripts/main.mjs"],
+  "relationships": {
+    "requires": [
+      {
+        "id": "lib-wrapper",
+        "type": "module",
+        "compatibility": {
+          "minimum": "1.12.5.0"
+        },
+        "reason": "libWrapper is used to patch Foundry methods and functions, extending or altering their functionality."
+      }
+    ]
+  },
   "url": "This is auto replaced",
   "manifest": "This is auto replaced",
   "download": "This is auto replaced",
