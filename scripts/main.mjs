@@ -1,4 +1,4 @@
-export const MODULE_ID = "crypto-dice-generator";
+const MODULE_ID = "crypto-dice-generator";
 const FUNCTION_TO_OVERRIDE = "CONFIG.Dice.randomUniform";
 
 /**
