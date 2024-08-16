@@ -8,6 +8,7 @@ const FUNCTION_TO_OVERRIDE = "CONFIG.Dice.randomUniform";
 function random() {
   const a32 = new Uint32Array(1);
   window.crypto.getRandomValues(a32);
+  // We divide the random number by the maximum value of a Uint32 (2**32) to get a value from 0 to 1.
   return a32[0] / 4294967296;
 }
 
